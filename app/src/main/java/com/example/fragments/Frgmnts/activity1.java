@@ -32,15 +32,14 @@ public class activity1 extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_activity3, container, false);
+        View view =  inflater.inflate(R.layout.fragment_activity1, container, false);
         calendar = Calendar.getInstance();
         dateFormat = new SimpleDateFormat("HH:mm:ss");
         date = dateFormat.format(calendar.getTime());
         TextView textView = (TextView) view.findViewById(R.id.text);
         textView.setText(date.toString());
         return view;
-     }
+    }
 }

@@ -1,5 +1,9 @@
 package com.example.fragments.Frgmnts;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -17,8 +21,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class activity3<textView> extends Fragment {
+    private TextView batterLevel;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
