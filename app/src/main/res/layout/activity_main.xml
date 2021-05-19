@@ -10,35 +10,56 @@
 
 
     <LinearLayout
-        android:layout_width="213dp"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/purple_500">
+        android:layout_weight="1"
+        android:background="@color/purple_500"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="600px"
-            android:text="Show Time"
+            android:layout_height="0dp"
             android:padding="20dp"
-            android:textSize="25dp"
-            />
+            android:layout_weight="1"
+            android:text="Show Time"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="600px"
-            android:text="Show Date"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:padding="20dp"
-            android:textSize="25dp"/>
+            android:text="Show Date"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="600px"
+            android:layout_height="0dp"
+            android:padding="20dp"
             android:text="Show Battery Level"
-            android:padding="10dp"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:layout_weight="1"/>
     </LinearLayout>
-    
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/linearlayout"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="700px"
+            android:layout_weight="1"
+            android:text="Assignment"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
 </LinearLayout>
