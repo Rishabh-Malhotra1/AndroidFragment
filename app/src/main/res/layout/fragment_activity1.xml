@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:text="8:00 P.M"
         android:gravity="center"
+        android:id="@+id/text"
         android:textSize="20dp"/>
 
 </FrameLayout>
