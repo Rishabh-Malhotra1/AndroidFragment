@@ -1,6 +1,7 @@
 package com.example.fragments;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import com.example.fragments.Frgmnts.activity3;
 public class MainActivity extends AppCompatActivity {
     private Button button1,button2,button3;
     LinearLayout linearLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         linearLayout = findViewById(R.id.linearlayout);
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 activity1 firstFragment = new activity1();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.linearlayout,firstFragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 activity2 firstFragment = new activity2();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.linearlayout,firstFragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
@@ -47,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 activity3 firstFragment = new activity3();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.linearlayout,firstFragment);
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
