@@ -1,0 +1,13 @@
+com/example/fragments/Frgmnts/activity2.java
+ com.example.fragments.Frgmnts.activity2
+com/example/fragments/BuildConfig.java
+ com.example.fragments.BuildConfig
+com/example/fragments/Frgmnts/activity3.java
+ com.example.fragments.Frgmnts.activity3
+com/example/fragments/MainActivity.java
+ com.example.fragments.MainActivity
+ com.example.fragments.MainActivity$1
+ com.example.fragments.MainActivity$2
+ com.example.fragments.MainActivity$3
+com/example/fragments/Frgmnts/activity1.java
+ com.example.fragments.Frgmnts.activity1
